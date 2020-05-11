@@ -18,15 +18,12 @@ def assembled_aoh
 end
 
 def literal_aoh
-  # Using Array literal syntax only, build a nested array that uses the data in
-  # held in the constants
-    array = [ 
-    BRUCE_G,
-    DON_G,
-    JOELLE_VD,
-    KATE_G,
-    PAT_M,
-    ]
+  array = [ 
+    { name:  "Don Gately", occupation: "Live-in Staff" },
+    { name:  "Joelle van Dyne", occupation: "Radio Personality" }, 
+    { name:  "Pat Monteseian", occupation: "Staff" },
+    { name:  "Kate Gompert", occupation: "None" },
+    BRUCE_G]
 end
 
 def aoh_lookup(aoh, row, key)
